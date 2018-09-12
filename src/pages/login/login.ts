@@ -6,6 +6,7 @@ import firebase from 'firebase';
 import { LoadingController } from 'ionic-angular';
 import { CategoriesPage } from '../categories/categories';
 import { IdentityPage } from '../identity/identity';
+import { RegisterPage } from '../register/register';
 /**
 * Generated class for the LoginPage page.
 *
@@ -121,4 +122,8 @@ export class LoginPage {
    });
    prompt.present();
  }
+
+  signup(){
+    this.navCtrl.push(RegisterPage);
+  }
  }
