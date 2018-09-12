@@ -5,6 +5,7 @@ import { LoginPage } from '../login/login';
 import { CategoriesPage } from '../categories/categories';
 import { DatabaseProvider } from '../../providers/database/database';
 import { ProfilePage } from '../profile/profile';
+import { ProfileEditPage } from '../profile-edit/profile-edit';
 
 @Component({
   selector: 'page-home',
@@ -30,5 +31,9 @@ export class HomePage {
 
   profilePage(){
     this.navCtrl.push(ProfilePage);
+  }
+
+  profileEdit(){
+    this.navCtrl.push(ProfileEditPage);
   }
 }

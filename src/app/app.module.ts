@@ -14,6 +14,7 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { IdentityPage } from '../pages/identity/identity';
 import { ProfilePage } from '../pages/profile/profile';
 import { TrackUploadPage } from '../pages/track-upload/track-upload';
+import { ProfileEditPage } from '../pages/profile-edit/profile-edit';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TrackUploadPage } from '../pages/track-upload/track-upload';
     RegisterPage,
     IdentityPage,
     ProfilePage,
-    TrackUploadPage
+    TrackUploadPage,
+    ProfileEditPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { TrackUploadPage } from '../pages/track-upload/track-upload';
     RegisterPage,
     IdentityPage,
     ProfilePage,
-    TrackUploadPage
+    TrackUploadPage,
+    ProfileEditPage
   ],
   providers: [
     StatusBar,
