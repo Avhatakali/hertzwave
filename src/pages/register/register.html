@@ -14,8 +14,7 @@
 
 
 <ion-content padding class="App">
-  <!-- creating the form  
-  giving the form a template variable of f-->
+ <div class="register">
   <form #f="ngForm" (ngSubmit)="register(f)">
     <div class="back">
 
@@ -70,6 +69,7 @@
       <button class="button" type="submit" ion-button full [disabled]="!f.valid" round color="light">Register</button>
     </div>
   </form>
+</div>
 
 </ion-content>
 
