@@ -19,9 +19,6 @@ export class DatabaseProvider {
     console.log('Hello DatabaseProvider Provider');
   }
 
-
-
-
   update(userID,obj)
   {
     firebase.database().ref('Registration/'+userID).update(obj);
@@ -30,10 +27,8 @@ export class DatabaseProvider {
  
   registerUser(email,password)
   {
-    return firebase.auth().createUserWithEmailAndPassword(email,password); 
-      
+    return firebase.auth().createUserWithEmailAndPassword(email,password);   
   }
-
 
   login(email:string, password: string){
     return firebase.auth().signInWithEmailAndPassword(email, password);
@@ -55,8 +50,6 @@ export class DatabaseProvider {
   resetPassword(email:string){
 
     return firebase.auth().sendPasswordResetEmail(email);
-    
-    
   }
 
   uploadTrack(filename, file) {
@@ -75,12 +68,11 @@ export class DatabaseProvider {
       })
 
     })
-
   }
-
 
    saveArtists(userID,obj)
    {
      return  firebase.database().ref('artists/' +userID).push(obj);
    }
+
 }

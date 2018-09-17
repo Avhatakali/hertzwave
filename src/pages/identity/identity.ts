@@ -78,12 +78,7 @@ export class IdentityPage {
           phone:this.details.phone,
           email:this.details.email,
           role:roles
-          
-    
         });
-
-
-        
       
         if(role==1)
         {
@@ -104,9 +99,7 @@ export class IdentityPage {
        //this.navCtrl.setRoot(CategoriesPage,{obj: roles});
 
         }
-
       }
-
 
     });
     ;
