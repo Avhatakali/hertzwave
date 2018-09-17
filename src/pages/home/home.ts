@@ -4,17 +4,24 @@ import { RegisterPage } from '../register/register';
 import { LoginPage } from '../login/login';
 import { CategoriesPage } from '../categories/categories';
 import { DatabaseProvider } from '../../providers/database/database';
-import { ProfilePage } from '../profile/profile';
-import { ProfileEditPage } from '../profile-edit/profile-edit';
+import { SplashPage } from '../splash/splash';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  file: any;
+  test = [];
+  song;
   constructor(public navCtrl: NavController,public db:DatabaseProvider) {
     console.log(this.db.getPlace());
+
+   
+  }
+
+  ngOnInit() {
+  
   }
 
   Register(){
@@ -29,11 +36,11 @@ export class HomePage {
     this.navCtrl.push(CategoriesPage);
   }
 
-  profilePage(){
-    this.navCtrl.push(ProfilePage);
+  splashPage(){
+    this.navCtrl.push(SplashPage);
   }
 
-  profileEdit(){
-    this.navCtrl.push(ProfileEditPage);
+  homePage(page:string){
+    this.navCtrl.push(page);
   }
 }
