@@ -24,7 +24,9 @@ export class ProfilePage {
   track;
   trackarray =[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public actionSheetCtrl: ActionSheetController) {
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    public actionSheetCtrl: ActionSheetController) {
   }
 
 //   ionViewDidLoad() {

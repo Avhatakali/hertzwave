@@ -1,16 +1,23 @@
 page-track-upload {
     .big_wrapper{
-        background-color: black;
-        color: white;
+        background: linear-gradient(rgba($color-dark, .9), rgba($color-dark, .8)),url('../../assets/imgs/7.jpg') !important;
+        background-size: cover !important;
+        animation: 1s ease fadeIn;
+
+        h2{
+            background: linear-gradient(rgba($color-dark, .9), rgba($color-dark, .8)), url('../../assets/imgs/7.jpg') !important;
+        }
     }
 
     .wrapper{
         margin-top: 30%;
-        background-color: black;
+        background: linear-gradient(rgba($color-dark, .9), rgba($color-dark, .8)),url('../../assets/imgs/7.jpg') !important;
+        color: white;
     }
 
     .details{
-        background-color: black;
+        background: linear-gradient(rgba($color-dark, .9), rgba($color-dark, .8)),url('../../assets/imgs/7.jpg') !important;
+        background-size: cover !important;
         color: white;
     }
 
